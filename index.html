@@ -14,8 +14,8 @@
   <body>
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand"
-          ><button
+        <a class="navbar-brand">
+          <button
             class="btn btn-secondary"
             type="button"
             data-bs-toggle="offcanvas"
@@ -24,8 +24,8 @@
           >
             <i class="fa-solid fa-bars"></i>
           </button>
-          Wobsite</a
-        >
+          Wobsite
+        </a>
         <form class="d-flex" role="search">
           <input
             class="form-control me-2"
@@ -37,81 +37,123 @@
         </form>
       </div>
     </nav>
-    <div class="container">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laborum
-        mollitia omnis accusantium magni in maxime eaque unde sit reiciendis,
-        optio quas molestiae obcaecati quasi consectetur nam nemo culpa placeat.
-      </p>
+    <div class="container my-3">
+      <div class="row mb-3">
+        <form>
+          <div class="form-floating has-validation mb-1">
+            <input
+              class="form-control"
+              type="text"
+              id="username"
+              placeholder="Username"
+              required
+            />
+            <label for="username">Username</label>
+            <div class="invalid-feedback">You need a username.</div>
+          </div>
+          <div class="form-floating has-validation mb-1">
+            <input
+              class="form-control"
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <label for="password">Password</label>
+            <div class="invalid-feedback">You need a password.</div>
+          </div>
+          <div class="form-floating mb-1">
+            <input
+              class="form-control"
+              type="password"
+              id="password-confirm"
+              placeholder="Confirm password"
+              required
+            />
+            <label for="password-confirm">
+              Password Pt. 2 - Electric Boogaloo
+            </label>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="row mb-3">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laborum
+          mollitia omnis accusantium magni in maxime eaque unde sit reiciendis,
+          optio quas molestiae obcaecati quasi consectetur nam nemo culpa
+          placeat.
+        </p>
+      </div>
     </div>
     <div
-        class="offcanvas offcanvas-start"
-        tabindex="-1"
-        id="slidemenu"
-        aria-labelledby="slidemenuLabel"
-      >
-        <div class="offcanvas-header">
-          <h3 class="offcanvas-title" id="slidemenuLabel">Slidemenu</h3>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <h3>Trending</h3>
-              <ul class="menu-subitems">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-              </ul>
-            </li>
-            <li class="list-group-item">
-              <h3>Cat Toys</h3>
-              <ul class="menu-subitems">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-              </ul>
-            </li>
-            <li class="list-group-item">
-              <h3>Dog Toys</h3>
-              <ul class="menu-subitems">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-              </ul>
-            </li>
-            <li class="list-group-item">
-              <h3>Fish Toys</h3>
-              <ul class="menu-subitems">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-              </ul>
-            </li>
-            <li class="list-group-item">
-              <h3>Tech</h3>
-              <ul class="menu-subitems">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-              </ul>
-            </li>
-            <li class="list-group-item">
-              <h3>Car Stuff</h3>
-              <ul class="menu-subitems">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="slidemenu"
+      aria-labelledby="slidemenuLabel"
+    >
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="slidemenuLabel">Slidemenu</h3>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
       </div>
+      <div class="offcanvas-body">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <h3>Trending</h3>
+            <ul class="menu-subitems">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <h3>Cat Toys</h3>
+            <ul class="menu-subitems">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <h3>Dog Toys</h3>
+            <ul class="menu-subitems">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <h3>Fish Toys</h3>
+            <ul class="menu-subitems">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <h3>Tech</h3>
+            <ul class="menu-subitems">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <h3>Car Stuff</h3>
+            <ul class="menu-subitems">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script
       src="https://kit.fontawesome.com/5db420ab9e.js"

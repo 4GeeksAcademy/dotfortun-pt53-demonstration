@@ -40,41 +40,53 @@
     <div class="container my-3">
       <div class="row mb-3">
         <form>
-          <div class="form-floating has-validation mb-1">
-            <input
-              class="form-control"
-              type="text"
-              id="username"
-              placeholder="Username"
-              required
-            />
-            <label for="username">Username</label>
-            <div class="invalid-feedback">You need a username.</div>
+          <div class="row">
+            <div class="col">
+              <div class="form-floating has-validation mb-1">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="username"
+                  placeholder="Username"
+                  required
+                />
+                <label for="username">Username</label>
+                <div class="invalid-feedback">You need a username.</div>
+              </div>
+            </div>
           </div>
-          <div class="form-floating has-validation mb-1">
-            <input
-              class="form-control"
-              type="password"
-              id="password"
-              placeholder="Password"
-              required
-            />
-            <label for="password">Password</label>
-            <div class="invalid-feedback">You need a password.</div>
+          <div class="row">
+            <div class="col">
+              <div class="form-floating has-validation mb-1">
+                <input
+                  class="form-control"
+                  type="password"
+                  id="password"
+                  placeholder="Password"
+                  required
+                />
+                <label for="password">Password</label>
+                <div class="invalid-feedback">You need a password.</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-floating mb-1">
+                <input
+                  class="form-control"
+                  type="password"
+                  id="password-confirm"
+                  placeholder="Confirm password"
+                  required
+                />
+                <label for="password-confirm"> Password Pt. 2 </label>
+              </div>
+            </div>
           </div>
-          <div class="form-floating mb-1">
-            <input
-              class="form-control"
-              type="password"
-              id="password-confirm"
-              placeholder="Confirm password"
-              required
-            />
-            <label for="password-confirm">
-              Password Pt. 2 - Electric Boogaloo
-            </label>
+          <div class="row">
+            <div class="col">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
           </div>
-          <button class="btn btn-primary" type="submit">Submit</button>
         </form>
       </div>
       <div class="row mb-3">
